@@ -1264,4 +1264,6 @@ function scroll_to() {
 	$("#checkbox_div2").scrollTo($scrolltodiv);
 }
 sortTable("table_products",2);
+var x = "Total Width: " + screen.width; 
+   alert(x);
 
