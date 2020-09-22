@@ -4,14 +4,7 @@
 <html style="background-color:LightGray;">
    <p style='font: 7px Arial;'>Version 1.13</p>
    <style>
-      input[type="checkbox"]{
-  		width: 30px; /*Desired width*/
-  		height: 30px; /*Desired height*/
-	}
-	   input[type="radio"]{
-  width: 30px; /*Desired width*/
-  height: 30px; /*Desired height*/
-}
+      
       .button {
       display: inline-block;
       text-decoration: none;
@@ -23,7 +16,7 @@
       border-bottom: 3px solid #333333;
       border-left: 3px solid #CCCCCC;
       word-warp: break-word;
-      /*width: 100px;*/
+      width: 100px;
       }
       .row0 {
       background-color:white;
@@ -33,17 +26,16 @@
       }
       table {border-radius:6px; /*border: 3px solid black*/; border-spacing: 0px 10px;/*box-shadow:4px 4px 4px #006280;*/}  td {/*border: 1px solid black;*/border-bottom: none;border-top: none; } th {/*border-bottom: 3px solid black;*/ background-color:#b3edff;}
       
-	   html {
-	   	width:800px;
-		font: bold 30px Arial;
-	   }
+	   
    </style>
    <head>
    	<link rel='manifest' href='manifest.json'></link>
    	      <link rel="stylesheet" href="css/swipebox.css">
       </link>
    </head>
-   <div id='begin_page' class="mobi">
+   
+      <body id="body_id">
+	      <div id='begin_page' class="mobi">
       <hr style="background-color:#0095C1;height:40px;">
       </hr>
       <div style='width:100%;display:inline-block;'>
@@ -54,7 +46,6 @@
          </div>
          <a href="#" onclick="window.open('http://visualprojects.co.za/wp-content/uploads/flipbook/2/mobile/index.html', '_system');return false;"><img src='img/brochure.jpg' style="width:65px;"></img></a>
       </div>
-      <body id="body_id">
          <b>
             <p><a class='button' href="#" onclick="alert_desc(); return false;">App Description</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class='button' href="#" onclick="go_to_div('dosis'); return false;">Dosages (RSA)</a></p>
          </b>
@@ -65,17 +56,17 @@
             <p><a class='button' id="gallery" href="#">Labels</a></p>
          </b>
          <div class="mobi" style="margin-left:0;">
-            <b style="margin-left:20px; font: bold 36px Arial;">Citrus Commodity</b>
+            <b style="margin-left:20px; ">Citrus Commodity</b>
             <form>
                <div id='checkbox_div'></div>
             </form>
             <br>
             Find country: <input id='input_country' type='input' onkeyup='scroll_to();'>
             <div id='full_countries'>
-               <br> <b  style="margin-left:20px;font: bold 36px Arial;">Markets (Countries) Exported to:</b>
-               <div id='checkbox_div2' style="width: 250px;height: 600px;overflow: scroll;background-color:white;"></div>
+               <br> <b  style="margin-left:20px;">Markets (Countries) Exported to:</b>
+               <div id='checkbox_div2' style="width: 200px;height: 150px;overflow: scroll;background-color:white;"></div>
                <div id='Selected_countries'>
-                  <b  style="margin-left:20px;font: bold 36px Arial;">Selected countries:</b>
+                  <b  style="margin-left:20px;">Selected countries:</b>
                   <div id='check_countries'></div>
                </div>
             </div>
